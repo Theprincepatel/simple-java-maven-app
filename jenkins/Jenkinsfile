@@ -1,5 +1,8 @@
-pipeline {
+groovypipeline {
     agent any
+    tools {
+        maven 'Maven'
+    }
     options {
         skipStagesAfterUnstable()
     }
